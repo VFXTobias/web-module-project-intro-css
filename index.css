@@ -64,7 +64,7 @@ html{
 body{
   font-size:1.6rem;
   line-height:1.5; /*this controls the space between lines, it takes the font size and multiplies it by this number to give you a line height*/
-  font-family: 'Antic Slab', serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 section{
@@ -76,47 +76,79 @@ div.container{
 }
 
 nav{
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	text-align: center;
+	width: 75%;
+	margin: 0 auto;
 	color: white;
+	padding: 1% 1%;
 }
 
 .box1{
-	background-color:rgb(247, 132, 25);
-	width:10%;
-	height: 50px;
+	background-color:#FF764E;
+	width:8%;
+	height: 60px;
 	display:inline-block;
 	border-radius: 10px;
-	margin: 0 3%;
+	margin: 0 5%;
 	padding: 1% 1% 0%;
+	transition: 1s;
+	
+ }
+
+ .box1:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
  }
 
 
 .box2{
-	background-color:rgb(105, 233, 255);
-	width: 10%;
-	height: 50px;
+	background-color:#5ED3EB;
+	width: 8%;
+	height: 60px;
 	display:inline-block;
 	border-radius: 10px;
-	margin: 0 3%;
+	margin: 0 5%;
 	padding: 1% 1% 0%;
+	transition: 1s;
 
 }
+
+ .box2:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
+ }
 
 .box3{
-	background-color:rgb(255, 208, 0);
-	width: 10%;
-	height: 50px;
+	background-color:#FFCD69;
+	width: 8%;
+	height: 60px;
 	display:inline-block;
 	border-radius: 10px;
-	margin: 0 3%;
+	margin: 0 5%;
 	padding: 1% 1% 0%;
-
+	transition: 1s;
 }
+ .box3:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
+ }
 
 h1{
-	font-family: 'Pacifico', cursive;
+	font-family: 'Chelsea Market', cursive;
 	font-size: 5rem;
+	color:black;
+}
+
+p{
+	color: black;
+}
+a{
+	color: white;
+}
+
+a:visited{
+	color: darkslategray;
 }
 span{
 	font-weight: bold;
@@ -127,11 +159,13 @@ span{
 	width: 80%;
 	padding:2%;
 	margin: 0 auto;
+	
 }
 .sectionOne p{
 	margin: 0 auto;
 	font-size: 1.25rem;
 	padding: 2%;
+	
 }
 
 .topImage{
@@ -147,13 +181,16 @@ span{
 }
 
 .sectionTwo{
-	background-color: rgb(199, 145, 125);
-	color: white;
+	background-color: #DDB9A3;
 	margin: 1% auto;
 	padding: 10px;
 	width: 60%;
+	text-align: center;
 }
 
+.sectionTwo p{
+	color: white;
+}
 .infoContainer{
 	margin: 0 auto;
 	width: 50%;
@@ -208,10 +245,11 @@ span{
 }
 
 .footerNav{
-	background-color: rgb(255, 227, 217);
-	width: 75%;
-	margin: 0 auto;
+	background-color: #F9E7DC);
 	text-align: center;
-	
-	
+	/* width: 75%; */
+	margin: 0 auto;
+	color: white;
+	/* padding: 0% 2%; */
+
 }
