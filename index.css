@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+<!-- /////////////////////////////////////////////////////// -->
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;/* ADD THIS TO THE TOP OF EVERY WEBSITE YOU BUILD - set it and forget it - it tells the elements only be as big as the width I give, if I give you padding or border apply it within that width*/
+  max-width: 100%; /*you can never be bigger than your parent*/ 
+}
+
+html{
+  font-size:62.5%;
+   /*the default browser font size is 16px - if we set the font size to be 62.5% of that then 1 rem = 10px - it makes maths easier, also % is a scalable unit this give the user more control over the font size */
+}
+body{
+  font-size:1.6rem;
+  line-height:1.5; /*this controls the space between lines, it takes the font size and multiplies it by this number to give you a line height*/
+  font-family: 'Roboto Mono', monospace;
+}
+
+section{
+  padding:1% 0;
+}
+
+div.container{
+	padding: 2%;
+}
+
+nav{
+	/* margin: 0 auto; */
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	color: white;
+	padding: 1% 1%;
+}
+
+.box1{
+	background-color:#FF764E;
+	width:8%;
+	height: 60px;
+	display:inline-block;
+	border-radius: 10px;
+	margin: 0 5%;
+	padding: 1% 1% 0%;
+	transition: 1s;
+	
+ }
+
+ .box1:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
+ }
+
+
+.box2{
+	background-color:#5ED3EB;
+	width: 8%;
+	height: 60px;
+	display:inline-block;
+	border-radius: 10px;
+	margin: 0 5%;
+	padding: 1% 1% 0%;
+	transition: 1s;
+
+}
+
+ .box2:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
+ }
+
+.box3{
+	background-color:#FFCD69;
+	width: 8%;
+	height: 60px;
+	display:inline-block;
+	border-radius: 10px;
+	margin: 0 5%;
+	padding: 1% 1% 0%;
+	transition: 1s;
+}
+ .box3:hover{
+	 transform: rotate(-20deg);
+	 background-color: green;
+ }
+
+h1{
+	font-family: 'Chelsea Market', cursive;
+	font-size: 5rem;
+	color:black;
+}
+
+p{
+	color: black;
+}
+a{
+	color: white;
+}
+
+a:visited{
+	color: darkslategray;
+}
+span{
+	font-weight: bold;
+}
+
+.sectionOne{
+	text-align: center;
+	width: 80%;
+	padding:2%;
+	margin: 0 auto;
+	
+}
+.sectionOne p{
+	margin: 0 auto;
+	font-size: 1.25rem;
+	padding: 2%;
+	
+}
+
+.topImage{
+	display: inline-block;
+	height: 250px;
+	border-radius: 50%;	
+}
+
+.headerText{
+	display:inline-block;
+	width: 30%;
+	text-align: center;
+}
+
+.sectionTwo{
+	background-color: #DDB9A3;
+	margin: 1% auto;
+	padding: 10px;
+	width: 60%;
+	text-align: center;
+}
+
+.sectionTwo p{
+	color: white;
+}
+.infoContainer{
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+
+.info1{
+	display:inline-block;
+	width: 50%;
+	padding: 1%;
+}
+
+.info2{
+	display: inline-block;
+	width: 50%;
+	padding: 1%;
+}
+
+.iconImage1{
+	display: inline-block;
+	height: 100px;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+.iconImage2{
+	display: inline-block;
+	height: 100px;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+.info p{
+	display: inline-block;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.footerImageContainer{
+	margin: 0 auto;
+	width: 75%;
+	height: 200px;
+	text-align: center;
+}
+
+.footerImage{
+	object-fit: cover;
+	object-position: 70% 15%;
+	width: 100%;
+	height: 100%;
+}
+
+.footerNav{
+	background-color: #F9E7DC);
+	text-align: center;
+	/* width: 75%; */
+	margin: 0 auto;
+	color: white;
+	/* padding: 0% 2%; */
+
+}
